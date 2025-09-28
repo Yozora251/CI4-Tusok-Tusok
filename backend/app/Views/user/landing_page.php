@@ -13,7 +13,7 @@
     }
     .hero {
       background: url('https://images.unsplash.com/photo-1605478269580-3b299c4c45ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      min-height: 90vh; /* keep it tall */
+      min-height: 90vh; 
       display: flex;
       align-items: center;
       justify-content: center;
@@ -33,9 +33,36 @@
       text-align: center;
       margin-top: 50px;
     }
+    .navbar {
+      background-color: #ff914d;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+      font-weight: bold;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Header / Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tusok-Tusok</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#foods">Foods</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero text-center">
@@ -47,7 +74,7 @@
   </section>
 
   <!-- About Section -->
-  <section class="container py-5 mt-5" style="margin-top:120px !important;">
+  <section id="about" class="container py-5 mt-5" style="margin-top:120px !important;">
     <div class="row align-items-center">
       <div class="col-md-6">
         <img src="https://images.unsplash.com/photo-1599924828205-79c2f4780d89?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="img-fluid rounded shadow" alt="Tusok Tusok">
